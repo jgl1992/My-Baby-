@@ -105,3 +105,14 @@ overflow: scroll;
 
 }
 
+1 Justina’s code
+2 Temp =75
+3 If temp >=75:
+4Print (“level hot”)
+5Elif temp >=69:
+6Print (“level cool”)
+7Elif temp >=63:
+8Print(“level cold”)
+9Else:
+10Print(“frozen”)
+
