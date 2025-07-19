@@ -1,118 +1,114 @@
-# My-Baby-
-Js-weather-app
-$ npm run dev
-network: use  -- host
-</div> 
-Import ./style.css
-Body {
-Background: red
-Vite page reload counter.js
+RE:
+A public GitHub repository containing your project: https://github.com/users/jgl1992/projects/1/views/3
+An HTML document for the page: 
+<!DOCTYPE html>
+<html lang ="en">
 <head>
-<meta charset = UTF
-<meta name = “viewport” content = “width=device-width,
-initial scale = 1.0”
+<meta charset = UTF>
+<title> weather API </title>
+<style>
+body {
+font-family: arial
+margin: 2em;
+    }
+.endpoint{
+padding: 1 em;'
+}
+</style>
 </head>
 <body>
-<header class= “header”>
-</header>
-<div class = “header – left”>
-<img class = “weather-icon large src = “” alt = “”>
-<data- current-wind
-<data current precip> 0.1</span> <span class =”value-sub-info”
-<div class = “label”> FL Low </div>
-box-sizing: border-box;
-body{
-Margin: 0;
-background-color: (200, 100, 85)
-color: hsl (200, 100, 10)
-font-family: sans-serif;
-.header{
-Display: flex;
-align-items: center;
-.header-left{
-Display: flex;
-width: 50%
-Align-items: center;
-Justify-content: center;
-margin: .5rem; 
-padding: 0.5rem;
-border-right: 2 px solid hsl (200,100%, 10%);
-}
-.weather-icon
-Width 40 px
-Height 40 px
-Object fitL contain
-Weather –icon large
-Width 8 0 px;
-Height: 80 px;
-}
-.header-current-temp {
-Font-size: 2rem;
-margin-left: 1rem;
-}
-.header-right {
-Display: grid; 
-Width 50%;
-Justify-content: space around;
-Gap: 0.5 rem 3;
-Grid-template-columns: repeat ( 3, auto)
-Grid-template-rows: repeat(2, auto);
-
-.label {
-Text-transform: uppercase;
-font-weight: bold;
-font-size: 0.6 rem;
-color: hsl(200, 100%, 20%);
-}
-.value-sub-info {
-font-weight: lighter;
-font-size: 0.75 rem;
-}
-.blurred {
-Filter: blur(3px);
-overflow: hidden;
-
-}
-
-
-
-<span data – current – temp> 32 &deg;</span> &deg;
-</div>
-#highof32
-
-<div class = “label”> high </div>
-
-<script type
+<h1> weather API </h1>
+<p> Tina Lin's API will give you data on the temperature (too hot to handle) for HIS "condition"; thank God we are NOT like him </p>
+<div class "endpoint">
+<h2> /api/weather/temperature </h2>
+<p> desc </strong> return temp </p>
+    <ul> 
+<li> location: string, LISLE </li>
+    </ul>
+"temperature": {
+"value": 70"
+  }
+}</pre>
+  </div>
 </body>
 </html>
-@fontawesome
- 
-OVERFLOW
-Div{
-Border: 2 px
-Height: 75 
-Style.css
-Div{
-Border: 2 px solid;
-Height: 75 px;
-overflow: visible;
+A CSS document to style the HTML page:
 
-Overflow: hidden;
-overflow: clip;
-overflow-clip-margin: 13px; 
-overflow: scroll;
-
-
+/justina.css/
+body{
+font-family: tahoma, geneva;
+background linear-gradient
+color: #444;
+text-align: center;
 }
 
-1 Justina’s code
-2 Temp =75
-3 If temp >=75:
-4Print (“level hot”)
-5Elif temp >=69:
-6Print (“level cool”)
-7Elif temp >=63:
-8Print(“level cold”)
-9Else:
-10Print(“frozen”)
+/* hot-weather.css */
 
+body {
+font-family: tahoma, geneva;
+background: linear-gradient
+color: #333;
+text-align:center;
+}
+  
+h1 {
+font-size: 2em;
+Color: #ff3c00;
+}
+
+.weather-icon {
+font-size: 5em;
+color: #ffca3a;
+}
+
+footer {
+margin-top: 3em;
+color:#444;
+}
+A JavaScript file that retrieves data from one of several public API sources to display the data on your HTML page/ 
+For the Star Wars API, have a page that shows character information and a page that shows film information.
+
+Here is my starwars.js file!
+//fetch and display star wars characters and film info from SWAPI
+const characterContainer = document.getElementByID("character");
+const filmContainer = document.getElementById("film");
+// fetch character data (Bix Caleen id 2)
+fetch("https://swapi.dev/api/people/2")
+.then(response => response.json())
+.then(Data =: {
+characterContainer.innerHTML =
+<H2> Bix's character info: fearless and bold </h2>
+<p><strong> name:</strong> ${data.name}</p>
+<p><strong>eye color: </strong> ${data.eye_color}</p>
+      `;
+    })
+.catch(error => {
+characterContainer.innerHTML = <p> error fetching </p>'
+}];
+
+    .catch(error => {
+      characterContainer.innerHTML = `<p>Error fetching character data.</p>`;
+      console.error(error);
+    });
+
+ 
+A README file that includes the instructions for running the webpage
+#🌦️ Tina Lin's Hot Weather API
+
+Welcome to my pleasant, robust, and productive API for accessing real-time weather data before your hiking adventure! You will know if it's sunny or rainy.
+In the file I am including **temperature** and **conditions** such as sunny or rainy. 
+
+
+
+CONTENT:
+Display the data for at least 2 of the end-points in the API
+Examples: If you choose the use the Weather API, use temperature and condition (rainy/sunny/etc) end-points. For the Star Wars API, use characters and film title end-points.
+Include navigation from each end-point’s page to the other end-points that are displayed
+Example: If you choose to use the Weather API, be able to click between a page that shows temperatures and a page that shows conditions. For the Star Wars API, have a page that shows character information and a page that shows film information.
+Issue new GET requests for the linked data to display in the linked pages.
+FUNCTIONALITY:
+Be sure that we can get the code to run without issues by following the instructions in the README file
+Be sure navigation between the different end-points behaves properly and is not slowed down by requesting more data than needs to be displayed
+Be sure your code is readable and well structured
+If including a user-interactive feature like a search field, be sure that you appropriately handle error cases
+Be thoughtful about what typ
